@@ -37,7 +37,7 @@
 <script type="text/javascript" src="http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/libraries/jquery.imagesloaded/jquery.imagesloaded.min.js?ny2uxz"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"kt_sub","theme_token":"jzQNdPIkmwZ9MyWb8fcdl-ONy8MzmNATmMgNrK6WyjI","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.11\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.tabs.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_images\/panopoly-images.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_admin\/panopoly-admin.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_magic\/panopoly-magic.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_theme\/js\/panopoly-accordion.js":1,"profiles\/panopoly\/libraries\/jquery.imagesloaded\/jquery.imagesloaded.min.js":1}},"CToolsModal":{"modalSize":{"type":"scale","width":".9","height":".9","addWidth":0,"addHeight":0,"contentRight":25,"contentBottom":75},"modalOptions":{"opacity":".55","background-color":"#FFF"},"animationSpeed":"fast","modalTheme":"CToolsModalDialog","throbberTheme":"CToolsModalThrobber"},"panopoly_magic":{"pane_add_preview_mode":"automatic"}});
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"kt_sub","theme_token":"pscHZesUUmkANJJLANcNB3SNPhvKiECI8722HQR4e5g","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.11\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.tabs.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_images\/panopoly-images.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_admin\/panopoly-admin.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_magic\/panopoly-magic.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_theme\/js\/panopoly-accordion.js":1,"profiles\/panopoly\/libraries\/jquery.imagesloaded\/jquery.imagesloaded.min.js":1}},"CToolsModal":{"modalSize":{"type":"scale","width":".9","height":".9","addWidth":0,"addHeight":0,"contentRight":25,"contentBottom":75},"modalOptions":{"opacity":".55","background-color":"#FFF"},"animationSpeed":"fast","modalTheme":"CToolsModalDialog","throbberTheme":"CToolsModalThrobber"},"panopoly_magic":{"pane_add_preview_mode":"automatic"}});
 //--><!]]>
 </script>
 
@@ -88,7 +88,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 @import url("http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/panopoly/panopoly_images/panopoly-images.css?ny2uxz");
 </style>
  -->
-    <link rel="stylesheet" type="text/css" href="styles/main.css?1453485413424">
+    <link rel="stylesheet" type="text/css" href="styles/main.css?1453487746789">
   
 
 </head>
@@ -100,7 +100,12 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
       
       <header class="navbar navbar-default ">
 
-    <div class="navbar-header">
+      <div class="brand navbar-brand">
+  <a href="/" title="Home" rel="home" class="logo">
+    <span class="sr-only">News not so big</span>
+  </a>
+</div>
+
 
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
   <span class="element-invisible">Toggle navigation</span>
@@ -110,14 +115,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 </button>
 
 
-      <div class="brand navbar-brand">
-  <a href="/" title="Home" rel="home" class="logo">
-    <span class="sr-only">News not so big</span>
-  </a>
-</div>
-
-
-      <nav class="collapse navbar-collapse " role="navigation">
+      <div class="navbar-collapse collapse" role="navigation">
         <h2 class="sr-only">Main menu</h2>
         <ul id="utility-nav" class="nav navbar-nav links clearfix" role="menubar">
           
@@ -259,7 +257,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
           
         </ul>
-      </nav>
+      </div>
 
       <a href="#" aria-hidden="true" class="search-toggle" data-toggle="collapse" data-target=".search-collapse"><span>Toggle Search</span><i class="icon search" aria-hidden="true"></i></a>
 <div class="search-container">
@@ -274,8 +272,6 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   </div>
 </div>
 
-
-    </div>
 
 </header>
 
@@ -588,11 +584,12 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   
     <script>
         document.addEventListener("DOMContentLoaded", function(event) {
+          window.$ = window.jQuery;
           document.addEventListener("touchstart", function(){},false);
-          jQuery('.footer ul > li > ul').matchHeight();
+          $('.footer ul > li > ul').matchHeight();
         });
     </script>
-    <script src="vendor/bootstrap-sass-twbs/assets/javascripts/bootstrap.min.js?1453485413425"></script>
+    <script src="vendor/bootstrap-sass-twbs/assets/javascripts/bootstrap.min.js?1453487746791"></script>
   
 
 </body>
