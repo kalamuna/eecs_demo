@@ -1,0 +1,45 @@
+<div class="panelizer-view-mode node node-teaser node-panopoly-page node-4 page-teaser node-promoted">
+    <h2><a href="{{path}}">{{title}}</a></h2>
+
+    <div class="panel-display boxton clearfix radix-boxton">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 radix-layouts-content panel-panel">
+                    <div class="panel-panel-inner">
+                        <div class="panel-pane pane-entity-field pane-node-field-featured-image">
+                            <div class="pane-content">
+                                <div class="field field-name-field-featured-image field-type-image field-label-hidden">
+                                    <div class="field-items">
+                                        <div class="field-item even">
+                                            <a href="{{path}}"><img class="panopoly-image-quarter" src="{{imgsrc}}" alt="{{title}}"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel-pane pane-entity-field pane-node-body">
+                            <div class="pane-content">
+                                <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                                    <div class="field-items">
+                                        <div class="field-item even">
+                                            <p>{{contents|safe|limit(250)}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel-pane pane-node-links link-wrapper">
+                            <div class="pane-content">
+                                <ul class="links inline">
+                                    <li class="node-readmore first last"><a href="{{path}}" title="{{title}}">Read more <span class="element-invisible">about {{title}}</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

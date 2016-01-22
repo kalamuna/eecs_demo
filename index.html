@@ -1,0 +1,698 @@
+<!doctype html>
+<html>
+<head>
+  <base href="/" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="apple-touch-icon" href="images/touch-icon.png">
+  <link rel="icon" href="images/favicon.png">
+  <!--[if IE]><link rel="shortcut icon" href="images/favicon.ico"><![endif]-->
+  <!-- or, set /favicon.ico for IE10 win -->
+  <meta name="msapplication-TileColor" content="#f00">
+  <meta name="msapplication-TileImage" content="/images/tileicon.png">
+
+  <title>
+    University Of California Berkeley Department Of Electrical Engineering And Computer Sciences
+  </title>
+
+  
+    <meta name="description" content="Static site framework for prototyping and building out CMS-less websites at Kalamuna.">
+  
+
+  
+    <script type="text/javascript" src="http://kalastatic-kalatheme.at.kalamuna.com/sites/all/modules/contrib/jquery_update/replace/jquery/1.11/jquery.min.js?v=1.11.2"></script>
+<script type="text/javascript" src="http://kalastatic-kalatheme.at.kalamuna.com/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://kalastatic-kalatheme.at.kalamuna.com/misc/drupal.js?ny2uxz"></script>
+<script type="text/javascript" src="http://kalastatic-kalatheme.at.kalamuna.com/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="http://kalastatic-kalatheme.at.kalamuna.com/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="http://kalastatic-kalatheme.at.kalamuna.com/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.tabs.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="http://kalastatic-kalatheme.at.kalamuna.com/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.accordion.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/panopoly/panopoly_images/panopoly-images.js?ny2uxz"></script>
+<script type="text/javascript" src="http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/panopoly/panopoly_admin/panopoly-admin.js?ny2uxz"></script>
+<script type="text/javascript" src="http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/panopoly/panopoly_magic/panopoly-magic.js?ny2uxz"></script>
+<script type="text/javascript" src="http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/panopoly/panopoly_theme/js/panopoly-accordion.js?ny2uxz"></script>
+<script type="text/javascript" src="http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/libraries/jquery.imagesloaded/jquery.imagesloaded.min.js?ny2uxz"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"kt_sub","theme_token":"4EjcHFqG6nGsog9SkMJA7BXpBuic-JsCX04yLf2fydw","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.11\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.tabs.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_images\/panopoly-images.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_admin\/panopoly-admin.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_magic\/panopoly-magic.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_theme\/js\/panopoly-accordion.js":1,"profiles\/panopoly\/libraries\/jquery.imagesloaded\/jquery.imagesloaded.min.js":1}},"CToolsModal":{"modalSize":{"type":"scale","width":".9","height":".9","addWidth":0,"addHeight":0,"contentRight":25,"contentBottom":75},"modalOptions":{"opacity":".55","background-color":"#FFF"},"animationSpeed":"fast","modalTheme":"CToolsModalDialog","throbberTheme":"CToolsModalThrobber"},"panopoly_magic":{"pane_add_preview_mode":"automatic"}});
+//--><!]]>
+</script>
+
+    <script src="vendor/matchHeight/dist/jquery.matchHeight.js"></script>
+    <script src="vendor/holderjs/holder.js"></script>
+    <!-- <style type="text/css" media="all">
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/modules/system/system.base.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/modules/system/system.messages.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/modules/system/system.theme.css?ny2uxz");
+</style>
+<style type="text/css" media="all">
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/panopoly/panopoly_core/css/panopoly-jquery-ui-theme.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.accordion.min.css?ny2uxz");
+</style>
+<style type="text/css" media="all">
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/contrib/date/date_api/date.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/contrib/date/date_popup/themes/datepicker.1.7.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/modules/field/theme/field.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/modules/node/node.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/panopoly/panopoly_admin/panopoly-admin-navbar.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/panopoly/panopoly_core/css/panopoly-dropbutton.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/sites/all/modules/contrib/panopoly_demo/panopoly_demo.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/panopoly/panopoly_magic/css/panopoly-magic.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/panopoly/panopoly_theme/css/panopoly-featured.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/panopoly/panopoly_theme/css/panopoly-accordian.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/panopoly/panopoly_theme/css/panopoly-layouts.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/panopoly/panopoly_widgets/panopoly-widgets.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/panopoly/panopoly_widgets/panopoly-widgets-spotlight.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/panopoly/panopoly_wysiwyg/panopoly-wysiwyg.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/contrib/radix_layouts/radix_layouts.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/modules/search/search.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/modules/user/user.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/contrib/views/css/views.css?ny2uxz");
+</style>
+<style type="text/css" media="all">
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/contrib/ctools/css/ctools.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/contrib/panels/css/panels.css?ny2uxz");
+</style>
+<style type="text/css" media="screen">
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/sites/all/themes/kalatheme/css/tweaks.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/sites/all/themes/kalatheme/css/panopoly.css?ny2uxz");
+</style>
+<style type="text/css" media="all">
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/sites/all/themes/kt_sub/kalastatic/build/styles/main.css?ny2uxz");
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/sites/all/themes/kt_sub/css/kt_sub.css?ny2uxz");
+</style>
+<style type="text/css" media="all">
+@import url("http://kalastatic-kalatheme.at.kalamuna.com/profiles/panopoly/modules/panopoly/panopoly_images/panopoly-images.css?ny2uxz");
+</style>
+ -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css?1453479933630">
+  
+
+</head>
+<body class="homepage">
+
+  
+  <header id="header">
+    
+      
+      <header class="navbar navbar-default ">
+
+    <div class="navbar-header">
+
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+  <span class="element-invisible">Toggle navigation</span>
+  <span class="icon-bar" aria-hidden="true"></span>
+  <span class="icon-bar" aria-hidden="true"></span>
+  <span class="icon-bar" aria-hidden="true"></span>
+</button>
+
+
+      <div class="brand navbar-brand">
+  <a href="/" title="Home" rel="home" class="logo">
+    <span class="sr-only">Drupal 7 with Kalastatic</span>
+  </a>
+</div>
+
+
+      <nav class="collapse navbar-collapse " role="navigation">
+        <h2 class="sr-only">Main menu</h2>
+        <ul id="utility-nav" class="nav navbar-nav links clearfix" role="menubar">
+          
+            
+
+<li class="home leaf" role="menuitem">
+
+
+
+<a title="Home" href="index.html"><span>Home<span></a>
+
+</li>
+
+          
+            
+
+<li class="students leaf" role="menuitem">
+
+
+
+<a title="Students" href="students"><span>Students<span></a>
+
+</li>
+
+          
+            
+
+<li class="faculty-staff leaf" role="menuitem">
+
+
+
+<a title="Faculty &amp; Staff" href="faculty-staff"><span>Faculty-staff<span></a>
+
+</li>
+
+          
+            
+
+<li class="industry leaf" role="menuitem">
+
+
+
+<a title="Industry" href="industry"><span>Industry<span></a>
+
+</li>
+
+          
+            
+
+<li class="news-events leaf" role="menuitem">
+
+
+
+<a title="News &amp; Events" href="news-events"><span>News &amp; Events<span></a>
+
+</li>
+
+          
+            
+
+<li class="myeecs leaf" role="menuitem">
+
+
+
+<a title="Login to MyEECS" href="my-eecs"><span>MyEECS<span></a>
+
+</li>
+
+          
+        </ul>
+        <ul id="main-nav" class="nav navbar-nav links clearfix" role="menubar">
+          
+            
+
+<li class="about leaf" role="menuitem">
+
+
+
+<a title="About" href="about.html"><span>About<span></a>
+
+</li>
+
+          
+            
+
+<li class="academics leaf" role="menuitem">
+
+
+
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Academics</span><span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      
+        <li><a href="#">Academics</a></li>
+      
+        <li><a href="#">Academics</a></li>
+      
+        <li><a href="#">Academics</a></li>
+      
+        <li><a href="#">Academics</a></li>
+      
+    </ul>
+  </li>
+
+</li>
+
+          
+            
+
+<li class="research leaf" role="menuitem">
+
+
+
+<a title="Research" href="research.html"><span>Research<span></a>
+
+</li>
+
+          
+            
+
+<li class="people leaf" role="menuitem">
+
+
+
+<a title="People" href="people.html"><span>People<span></a>
+
+</li>
+
+          
+            
+
+<li class="connect leaf" role="menuitem">
+
+
+
+<a title="Connect" href="connect.html"><span>Connect<span></a>
+
+</li>
+
+          
+        </ul>
+      </nav>
+
+      <a href="#" aria-hidden="true" class="search-toggle" data-toggle="collapse" data-target=".search-collapse"><span>Toggle Search</span><i class="icon search" aria-hidden="true"></i></a>
+<div class="search-container">
+  <span class="sr-only">Search</span>
+  <div class="search-box collapse search-collapse">
+    <form action="#" method="GET">
+      <input class="form-text" id="edit-search-block" placeholder="Search" name="query" type="text">
+      <!-- <input alt="Search" class="search-submit" src="/sites/all/themes/kettering/images/header/search/search-submit.png" type="image"> -->
+      <button role="button" type="submit" class="search-submit "><span>Search</span><i class="icon search" aria-hidden="true"></i></button>
+      <button role="button" type="close" class="search-close"><span>Close</span><i class="icon close" aria-hidden="true"></i></button>
+    </form>
+  </div>
+</div>
+
+
+    </div>
+
+</header>
+
+    
+  </header>
+  
+
+  <main role="main" class="main">
+  
+    <div class="container">
+
+      <div>
+        
+        <article class="tout threeup">
+  <div class="media">
+    <img src="http://img.uvumi.com/photos/5367/big/2000px-smpte-color-bars-16x9-svg.png" alt="Alt text is important for accessibility!">
+  </div>
+  <div class="content">
+    <h3 class="title">Article Headline</h3>
+    <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+    <ul class="links">
+      <li><a href="#">A Link of Somesort</a></li>
+      <li><a href="#">A Link of Somesort</a></li>
+      <li><a href="#">A Link of Somesort</a></li>
+    </ul>
+    <button role="button" class="cta"><span>CTA of Some Sort</span><i class="icon terminal" aria-hidden="true"></i></button>
+  </div>
+</article>
+
+        <article class="tout threeup">
+  <div class="media">
+    <img src="http://img.uvumi.com/photos/5367/big/2000px-smpte-color-bars-16x9-svg.png" alt="Alt text is important for accessibility!">
+  </div>
+  <div class="content">
+    <h3 class="title">Article Headline</h3>
+    <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+    <ul class="links">
+      <li><a href="#">A Link of Somesort</a></li>
+      <li><a href="#">A Link of Somesort</a></li>
+      <li><a href="#">A Link of Somesort</a></li>
+    </ul>
+    <button role="button" class="cta"><span>CTA of Some Sort</span><i class="icon terminal" aria-hidden="true"></i></button>
+  </div>
+</article>
+
+        <article class="tout threeup">
+  <div class="media">
+    <img src="http://img.uvumi.com/photos/5367/big/2000px-smpte-color-bars-16x9-svg.png" alt="Alt text is important for accessibility!">
+  </div>
+  <div class="content">
+    <h3 class="title">Article Headline</h3>
+    <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+    <ul class="links">
+      <li><a href="#">A Link of Somesort</a></li>
+      <li><a href="#">A Link of Somesort</a></li>
+      <li><a href="#">A Link of Somesort</a></li>
+    </ul>
+    <button role="button" class="cta"><span>CTA of Some Sort</span><i class="icon terminal" aria-hidden="true"></i></button>
+  </div>
+</article>
+
+      </div>
+
+      <div>
+        
+        <article class="tout twoup">
+  <div class="media">
+    <img src="http://img.uvumi.com/photos/5367/big/2000px-smpte-color-bars-16x9-svg.png" alt="Alt text is important for accessibility!">
+  </div>
+  <div class="content">
+    <h3 class="title">Article Headline</h3>
+    <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+    <ul class="links">
+      <li><a href="#">A Link of Somesort</a></li>
+      <li><a href="#">A Link of Somesort</a></li>
+      <li><a href="#">A Link of Somesort</a></li>
+    </ul>
+    <button role="button" class="cta"><span>CTA of Some Sort</span><i class="icon terminal" aria-hidden="true"></i></button>
+  </div>
+</article>
+
+        <article class="tout twoup">
+  <div class="media">
+    <img src="http://img.uvumi.com/photos/5367/big/2000px-smpte-color-bars-16x9-svg.png" alt="Alt text is important for accessibility!">
+  </div>
+  <div class="content">
+    <h3 class="title">Article Headline</h3>
+    <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+    <ul class="links">
+      <li><a href="#">A Link of Somesort</a></li>
+      <li><a href="#">A Link of Somesort</a></li>
+      <li><a href="#">A Link of Somesort</a></li>
+    </ul>
+    <button role="button" class="cta"><span>CTA of Some Sort</span><i class="icon terminal" aria-hidden="true"></i></button>
+  </div>
+</article>
+
+        <article class="tout twoup">
+  <div class="media">
+    <img src="http://img.uvumi.com/photos/5367/big/2000px-smpte-color-bars-16x9-svg.png" alt="Alt text is important for accessibility!">
+  </div>
+  <div class="content">
+    <h3 class="title">Article Headline</h3>
+    <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+    <ul class="links">
+      <li><a href="#">A Link of Somesort</a></li>
+      <li><a href="#">A Link of Somesort</a></li>
+      <li><a href="#">A Link of Somesort</a></li>
+    </ul>
+    <button role="button" class="cta"><span>CTA of Some Sort</span><i class="icon terminal" aria-hidden="true"></i></button>
+  </div>
+</article>
+
+        <article class="tout twoup">
+  <div class="media">
+    <img src="http://img.uvumi.com/photos/5367/big/2000px-smpte-color-bars-16x9-svg.png" alt="Alt text is important for accessibility!">
+  </div>
+  <div class="content">
+    <h3 class="title">Article Headline</h3>
+    <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+    <ul class="links">
+      <li><a href="#">A Link of Somesort</a></li>
+      <li><a href="#">A Link of Somesort</a></li>
+      <li><a href="#">A Link of Somesort</a></li>
+    </ul>
+    <button role="button" class="cta"><span>CTA of Some Sort</span><i class="icon terminal" aria-hidden="true"></i></button>
+  </div>
+</article>
+
+      </div>
+
+    </div>
+
+</main>
+
+  
+    
+    <footer class="footer">
+
+  <div class="brand navbar-brand">
+  <a href="/" title="Home" rel="home" class="logo">
+    <span class="sr-only">Drupal 7 with Kalastatic</span>
+  </a>
+</div>
+
+
+  <ul class="nav navbar-nav footer-nav">
+    
+      
+
+<li class="about leaf" role="menuitem">
+
+
+
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+    <ul class="nav">
+      
+        <li class="diversity"><a href="#">Diversity</a></li>
+      
+        <li class="history"><a href="#">History</a></li>
+      
+    </ul>
+
+</li>
+
+    
+      
+
+<li class="academics leaf" role="menuitem">
+
+
+
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Academics</a>
+    <ul class="nav">
+      
+        <li class="grad-programs"><a href="#">Grad Programs</a></li>
+      
+        <li class="grad-admissions"><a href="#">Grad Admissions</a></li>
+      
+        <li class="undegrad-programs"><a href="#">Undegrad Programs</a></li>
+      
+        <li class="undergrad-admissions"><a href="#">Undergrad Admissions</a></li>
+      
+        <li class="courses"><a href="#">Courses</a></li>
+      
+        <li class="class-schedules"><a href="#">Class Schedules</a></li>
+      
+        <li class="info-for-women-students"><a href="#">Info for Women Students</a></li>
+      
+    </ul>
+
+</li>
+
+    
+      
+
+<li class="research leaf" role="menuitem">
+
+
+
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research</a>
+    <ul class="nav">
+      
+        <li class="research-areas"><a href="#">Research Areas</a></li>
+      
+        <li class="projects"><a href="#">Projects</a></li>
+      
+        <li class="centers-and-labs"><a href="#">Centers and Labs</a></li>
+      
+        <li class="annual-symposium"><a href="#">Annual Symposium</a></li>
+      
+        <li class="publications"><a href="#">Publications</a></li>
+      
+        <li class="become-a-visiting-scholar"><a href="#">Become a Visiting Scholar</a></li>
+      
+    </ul>
+
+</li>
+
+    
+      
+
+<li class="people leaf" role="menuitem">
+
+
+
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">People</a>
+    <ul class="nav">
+      
+        <li class="leadership"><a href="#">Leadership</a></li>
+      
+        <li class="directory"><a href="#">Directory</a></li>
+      
+        <li class="faculty"><a href="#">Faculty</a></li>
+      
+        <li class="students"><a href="#">Students</a></li>
+      
+        <li class="student-organizations"><a href="#">Student Organizations</a></li>
+      
+        <li class="alumni"><a href="#">Alumni</a></li>
+      
+        <li class="staff"><a href="#">Staff</a></li>
+      
+    </ul>
+
+</li>
+
+    
+      
+
+<li class="resources leaf" role="menuitem">
+
+
+
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
+    <ul class="nav">
+      
+        <li class="staff-and-faculty-resources"><a href="#">Staff and Faculty Resources</a></li>
+      
+        <li class="student-resources"><a href="#">Student Resources</a></li>
+      
+        <li class="center-for-student-affairs"><a href="#">Center for Student Affairs</a></li>
+      
+        <li class="current-students"><a href="#">Current Students</a></li>
+      
+        <li class="student-handbook"><a href="#">Student Handbook</a></li>
+      
+        <li class="grad-handbook"><a href="#">Grad Handbook</a></li>
+      
+        <li class="undergrad-handbook"><a href="#">Undergrad Handbook</a></li>
+      
+        <li class="find-a-job"><a href="#">Find a Job</a></li>
+      
+        <li class="tas-readers"><a href="#">TAs Readers</a></li>
+      
+    </ul>
+
+</li>
+
+    
+      
+
+<li class="industry leaf" role="menuitem">
+
+
+
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Industry</a>
+    <ul class="nav">
+      
+        <li class="student-recruitment"><a href="#">Student Recruitment</a></li>
+      
+        <li class="become-a-partner"><a href="#">Become a Partner</a></li>
+      
+    </ul>
+
+</li>
+
+    
+      
+
+<li class="connect leaf" role="menuitem">
+
+
+
+<a title="" href="connect">Connect</a>
+
+</li>
+
+    
+  </ul>
+
+  <div class="footer-tier">
+    <ul class="nav navbar-nav links utility-nav clearfix" role="menubar">
+      
+        
+
+<li class="home leaf" role="menuitem">
+
+
+
+<a title="Home" href="index.html"><span>Home<span></a>
+
+</li>
+
+      
+        
+
+<li class="students leaf" role="menuitem">
+
+
+
+<a title="Students" href="students"><span>Students<span></a>
+
+</li>
+
+      
+        
+
+<li class="faculty-staff leaf" role="menuitem">
+
+
+
+<a title="Faculty &amp; Staff" href="faculty-staff"><span>Faculty-staff<span></a>
+
+</li>
+
+      
+        
+
+<li class="industry leaf" role="menuitem">
+
+
+
+<a title="Industry" href="industry"><span>Industry<span></a>
+
+</li>
+
+      
+        
+
+<li class="news-events leaf" role="menuitem">
+
+
+
+<a title="News &amp; Events" href="news-events"><span>News &amp; Events<span></a>
+
+</li>
+
+      
+        
+
+<li class="myeecs leaf" role="menuitem">
+
+
+
+<a title="Login to MyEECS" href="my-eecs"><span>MyEECS<span></a>
+
+</li>
+
+      
+    </ul>
+
+    <ul class="nav navbar-nav links social">
+      <li class="twitter">
+        <a href="#"><span class="sr-only">Twitter</span></a>
+      </li>
+    </ul>
+
+
+  </div>
+
+
+  <div class="small-print">
+    <div class="copyright">&copy; 2016 Berkeley Regent</div>
+
+    <ul class="links policies">
+      <li class="">
+        <a href="#"><span>Privacy Policy</span></a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+  
+
+  
+  
+
+  
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+          document.addEventListener("touchstart", function(){},false);
+          jQuery('.footer ul > li > ul').matchHeight();
+        });
+    </script>
+    <script src="vendor/bootstrap-sass-twbs/assets/javascripts/bootstrap.min.js?1453479933633"></script>
+  
+
+</body>
+</html>

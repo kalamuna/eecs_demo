@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Style Guide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <!-- Latest compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="public/kss.css">
+    <link type="text/css" rel="stylesheet" href="public/prettify.css">
+    <link rel="stylesheet" href="../styles/main.css">
+
+  </head>
+  <body data-spy="scroll" data-target="#sidebar">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./index.html">Styleguide</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-styleguide-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">Home</a></li>
+              <li>
+                <a href="section-1.html"><!--1.0: -->CSS</a>
+              </li>
+              <li>
+                <a href="section-2.html"><!--2.0: -->Components</a>
+              </li>
+              <li>
+                <a href="section-3.html"><!--3.0: -->JavaScript</a>
+              </li>
+              <li>
+                <a href="section-4.html"><!--4.0: -->Fontawesome</a>
+              </li>
+              <li>
+                <a href="section-10.html"><!--10.0: -->Custom Components</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+          <article class="col-xs-12 col-sm-9">
+
+              <section class="kss-depth-1 jumbotron">
+                <h1 class="kss-title" id="4">Fontawesome</h1>
+                <p>You know, icons and such</p>
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="4-1">
+                  <span class="kss-ref badge pull-right">4-1</span> Icons
+                </h2>
+                <div class="kss-box"><p>You can place Font Awesome icons just about anywhere using the CSS Prefix <code>fa</code> and the icon&#39;s name. Font Awesome is designed to be used with inline elements (we like the <code>&lt;i&gt;</code> tag for brevity, but using a <code>&lt;span&gt;</code> is more semantically correct).</p>
+<p>For a full list of available icons, visit <a href="http://fortawesome.github.io/Font-Awesome/icons/">the Font Awesome documentation</a>.</p>
+</div>
+
+              <div class="kss-example"><i class="fa [modifier class]"></i></div>
+              <pre class="prettyprint lang-html">&lt;i class=&quot;fa [modifier class]&quot;&gt;&lt;/i&gt;</pre>
+
+                <h4>Camera Retro <span class="pull-right"><code>.fa-camera-retro</code></span></h4>
+                <div class="kss-example"><i class="fa fa-camera-retro"></i></div>
+                <h4>Thumbs Up <span class="pull-right"><code>.fa-thumbs-o-up</code></span></h4>
+                <div class="kss-example"><i class="fa fa-thumbs-o-up"></i></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="4-2">
+                  <span class="kss-ref badge pull-right">4-2</span> Larger Icons
+                </h2>
+                <div class="kss-box"><p>To increase icon sizes relative to their container, use the <code>fa-lg</code> (33% increase), <code>fa-2x</code>, <code>fa-3x</code>, <code>fa-4x</code>, or <code>fa-5x</code> classes.</p>
+</div>
+
+              <div class="kss-example"><i class="fa fa-camera-retro [modifier class]"></i></div>
+              <pre class="prettyprint lang-html">&lt;i class=&quot;fa fa-camera-retro [modifier class]&quot;&gt;&lt;/i&gt;</pre>
+
+                <h4>Large <span class="pull-right"><code>.fa-lg</code></span></h4>
+                <div class="kss-example"><i class="fa fa-camera-retro fa-lg"></i></div>
+                <h4>2x <span class="pull-right"><code>.fa-2x</code></span></h4>
+                <div class="kss-example"><i class="fa fa-camera-retro fa-2x"></i></div>
+                <h4>3x <span class="pull-right"><code>.fa-3x</code></span></h4>
+                <div class="kss-example"><i class="fa fa-camera-retro fa-3x"></i></div>
+                <h4>4x <span class="pull-right"><code>.fa-4x</code></span></h4>
+                <div class="kss-example"><i class="fa fa-camera-retro fa-4x"></i></div>
+                <h4>5x <span class="pull-right"><code>.fa-5x</code></span></h4>
+                <div class="kss-example"><i class="fa fa-camera-retro fa-5x"></i></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="4-3">
+                  <span class="kss-ref badge pull-right">4-3</span> Fixed Width Icons
+                </h2>
+                <div class="kss-box"><p>Use <code>fa-fw</code> to set icons at a fixed width. Great to use when different icon widths throw off alignment. Especially useful in things like nav lists &amp; list groups.</p>
+</div>
+
+              <div class="kss-example"><div class="list-group">
+  <a class="list-group-item" href="#"><i class="fa fa-home fa-fw"></i>&nbsp; Home</a>
+  <a class="list-group-item" href="#"><i class="fa fa-book fa-fw"></i>&nbsp; Library</a>
+  <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw"></i>&nbsp; Applications</a>
+  <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw"></i>&nbsp; Settings</a>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;list-group&quot;&gt;
+  &lt;a class=&quot;list-group-item&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-home fa-fw&quot;&gt;&lt;/i&gt;&amp;nbsp; Home&lt;/a&gt;
+  &lt;a class=&quot;list-group-item&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-book fa-fw&quot;&gt;&lt;/i&gt;&amp;nbsp; Library&lt;/a&gt;
+  &lt;a class=&quot;list-group-item&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-pencil fa-fw&quot;&gt;&lt;/i&gt;&amp;nbsp; Applications&lt;/a&gt;
+  &lt;a class=&quot;list-group-item&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-cog fa-fw&quot;&gt;&lt;/i&gt;&amp;nbsp; Settings&lt;/a&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="4-4">
+                  <span class="kss-ref badge pull-right">4-4</span> List Icons
+                </h2>
+                <div class="kss-box"><p>Use <code>fa-ul</code> and <code>fa-li</code> to easily replace default bullets in unordered lists.</p>
+</div>
+
+              <div class="kss-example"><ul class="fa-ul">
+  <li><i class="fa-li fa fa-check-square"></i>List icons</li>
+  <li><i class="fa-li fa fa-check-square"></i>can be used</li>
+  <li><i class="fa-li fa fa-spinner fa-spin"></i>as bullets</li>
+  <li><i class="fa-li fa fa-square"></i>in lists</li>
+</ul></div>
+              <pre class="prettyprint lang-html">&lt;ul class=&quot;fa-ul&quot;&gt;
+  &lt;li&gt;&lt;i class=&quot;fa-li fa fa-check-square&quot;&gt;&lt;/i&gt;List icons&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;fa-li fa fa-check-square&quot;&gt;&lt;/i&gt;can be used&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;fa-li fa fa-spinner fa-spin&quot;&gt;&lt;/i&gt;as bullets&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;fa-li fa fa-square&quot;&gt;&lt;/i&gt;in lists&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="4-5">
+                  <span class="kss-ref badge pull-right">4-5</span> Bordered &amp; Pulled Icons
+                </h2>
+                <div class="kss-box"><p>Use <code>fa-border</code> and <code>pull-right</code> or <code>pull-left</code> for easy pull quotes or article icons</p>
+</div>
+
+              <div class="kss-example"><p><i class="fa fa-quote-left fa-3x pull-left fa-border"></i>
+...tomorrow we will run faster, stretch out our arms farther...
+And then one fine morning— So we beat on, boats against the
+current, borne back ceaselessly into the past.</p></div>
+              <pre class="prettyprint lang-html">&lt;p&gt;&lt;i class=&quot;fa fa-quote-left fa-3x pull-left fa-border&quot;&gt;&lt;/i&gt;
+...tomorrow we will run faster, stretch out our arms farther...
+And then one fine morning— So we beat on, boats against the
+current, borne back ceaselessly into the past.&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="4-6">
+                  <span class="kss-ref badge pull-right">4-6</span> Animated Icons
+                </h2>
+                <div class="kss-box"><p>Use the <code>fa-spin</code> class to get any icon to rotate, and use <code>fa-pulse</code> to have it rotate with 8 steps. Works well with <code>fa-spinner</code>, <code>fa-refresh</code>, and <code>fa-cog</code>.</p>
+</div>
+
+              <div class="kss-example"><i class="fa fa-spinner fa-2x [modifier class]"></i>
+<i class="fa fa-circle-o-notch [modifier class]"></i>
+<i class="fa fa-refresh [modifier class]"></i>
+<i class="fa fa-cog [modifier class]"></i></div>
+              <pre class="prettyprint lang-html">&lt;i class=&quot;fa fa-spinner fa-2x [modifier class]&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fa fa-circle-o-notch [modifier class]&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fa fa-refresh [modifier class]&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fa fa-cog [modifier class]&quot;&gt;&lt;/i&gt;</pre>
+
+                <h4>Spin <span class="pull-right"><code>.fa-spin</code></span></h4>
+                <div class="kss-example"><i class="fa fa-spinner fa-2x fa-spin"></i>
+<i class="fa fa-circle-o-notch fa-spin"></i>
+<i class="fa fa-refresh fa-spin"></i>
+<i class="fa fa-cog fa-spin"></i></div>
+                <h4>Pulse <span class="pull-right"><code>.fa-pulse</code></span></h4>
+                <div class="kss-example"><i class="fa fa-spinner fa-2x fa-pulse"></i>
+<i class="fa fa-circle-o-notch fa-pulse"></i>
+<i class="fa fa-refresh fa-pulse"></i>
+<i class="fa fa-cog fa-pulse"></i></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="4-7">
+                  <span class="kss-ref badge pull-right">4-7</span> Rotated &amp; Flipped
+                </h2>
+                <div class="kss-box"><p>To arbitrarily rotate and flip icons, use the <code>fa-rotate-<em></code> and <code>fa-flip-</em></code> classes.</p>
+</div>
+
+              <div class="kss-example"><i class="fa fa-shield fa-2x [modifier class]"></i></div>
+              <pre class="prettyprint lang-html">&lt;i class=&quot;fa fa-shield fa-2x [modifier class]&quot;&gt;&lt;/i&gt;</pre>
+
+                <h4>Rotate 90 <span class="pull-right"><code>.fa-rotate-90</code></span></h4>
+                <div class="kss-example"><i class="fa fa-shield fa-2x fa-rotate-90"></i></div>
+                <h4>Rotate 180 <span class="pull-right"><code>.fa-rotate-180</code></span></h4>
+                <div class="kss-example"><i class="fa fa-shield fa-2x fa-rotate-180"></i></div>
+                <h4>Rotate 270 <span class="pull-right"><code>.fa-rotate-270</code></span></h4>
+                <div class="kss-example"><i class="fa fa-shield fa-2x fa-rotate-270"></i></div>
+                <h4>Flip Horizontal <span class="pull-right"><code>.fa-flip-horizontal</code></span></h4>
+                <div class="kss-example"><i class="fa fa-shield fa-2x fa-flip-horizontal"></i></div>
+                <h4>Flip Vertical <span class="pull-right"><code>.fa-flip-vertical</code></span></h4>
+                <div class="kss-example"><i class="fa fa-shield fa-2x fa-flip-vertical"></i></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2">
+                <h2 class="kss-title" id="4-8">
+                  <span class="kss-ref badge pull-right">4-8</span> Stacked Icons
+                </h2>
+                <div class="kss-box"><p>To stack multiple icons, use the <code>fa-stack</code> class on the parent, the <code>fa-stack-1x</code> for the regularly sized icon, and <code>fa-stack-2x</code> for the larger icon. <code>fa-inverse</code> can be used as an alternative icon color. You can even throw larger icon classes on the parent to get further control of sizing.</p>
+</div>
+
+              <div class="kss-example"><span class="fa-stack fa-lg">
+  <i class="fa fa-square-o fa-stack-2x"></i>
+  <i class="fa fa-twitter fa-stack-1x"></i>
+</span>
+fa-twitter on fa-square-o<br>
+<span class="fa-stack fa-lg">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
+</span>
+fa-flag on fa-circle<br>
+<span class="fa-stack fa-lg">
+  <i class="fa fa-square fa-stack-2x"></i>
+  <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+</span>
+fa-terminal on fa-square<br>
+<span class="fa-stack fa-lg">
+  <i class="fa fa-camera fa-stack-1x"></i>
+  <i class="fa fa-ban fa-stack-2x text-danger"></i>
+</span>
+fa-ban on fa-camera</div>
+              <pre class="prettyprint lang-html">&lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+  &lt;i class=&quot;fa fa-square-o fa-stack-2x&quot;&gt;&lt;/i&gt;
+  &lt;i class=&quot;fa fa-twitter fa-stack-1x&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+fa-twitter on fa-square-o&lt;br&gt;
+&lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+  &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+  &lt;i class=&quot;fa fa-flag fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+fa-flag on fa-circle&lt;br&gt;
+&lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+  &lt;i class=&quot;fa fa-square fa-stack-2x&quot;&gt;&lt;/i&gt;
+  &lt;i class=&quot;fa fa-terminal fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+fa-terminal on fa-square&lt;br&gt;
+&lt;span class=&quot;fa-stack fa-lg&quot;&gt;
+  &lt;i class=&quot;fa fa-camera fa-stack-1x&quot;&gt;&lt;/i&gt;
+  &lt;i class=&quot;fa fa-ban fa-stack-2x text-danger&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+fa-ban on fa-camera</pre>
+
+
+              <hr />
+
+            </section>
+        </article>
+        <div class="col-xs-6 col-sm-3" id="sidebar">
+          <div class="list-group" data-spy="affix">
+                <!--<li><a href="#" class="list-group-item disabled">
+                  <h4 class="list-group-item-heading">Fontawesome</h4>
+                </a></li>-->
+                <a class="list-group-item" href="#4-1"><!--<span class="kss-ref badge" >4-1</span> -->Icons</a>
+                <a class="list-group-item" href="#4-2"><!--<span class="kss-ref badge" >4-2</span> -->Larger Icons</a>
+                <a class="list-group-item" href="#4-3"><!--<span class="kss-ref badge" >4-3</span> -->Fixed Width Icons</a>
+                <a class="list-group-item" href="#4-4"><!--<span class="kss-ref badge" >4-4</span> -->List Icons</a>
+                <a class="list-group-item" href="#4-5"><!--<span class="kss-ref badge" >4-5</span> -->Bordered &amp; Pulled Icons</a>
+                <a class="list-group-item" href="#4-6"><!--<span class="kss-ref badge" >4-6</span> -->Animated Icons</a>
+                <a class="list-group-item" href="#4-7"><!--<span class="kss-ref badge" >4-7</span> -->Rotated &amp; Flipped</a>
+                <a class="list-group-item" href="#4-8"><!--<span class="kss-ref badge" >4-8</span> -->Stacked Icons</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="public/kss.js"></script>
+    <script src="public/prettify.js"></script>
+    <script>
+      jQuery(document).ready(function(){
+        // Ensure code blocks are highlighted properly...
+        jQuery('pre>code').addClass('prettyprint');
+        prettyPrint();
+
+        // Set the navigation to be the correct width.
+        jQuery('#sidebar .list-group').on('affix.bs.affix', function () {
+          jQuery('#sidebar .list-group').width(jQuery('.col-sm-3').width());
+        });
+      });
+    </script>
+    
+  </body>
+</html>
