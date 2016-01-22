@@ -5140,9 +5140,7 @@ button.close {
 /* placeholder mixin */
 /* end placeholder mixin */
 /*
-Headlines
-
-Type styles
+Typographic Styles
 
 Markup:
 <div class="content">
@@ -7444,13 +7442,17 @@ Styleguide 5.3
     .navbar-default {
       padding-top: 3em; } }
 
+@media (max-width: 768px) {
+  .navbar-default .navbar-collapse {
+    top: 5.5em !important; } }
+
 @media (max-width: 992px) {
   .navbar-default .navbar-collapse {
+    top: 6em;
     border-top: 0;
     padding: 0;
     position: absolute;
     width: 100%;
-    top: 6em;
     background: #003262;
     padding: 0;
     z-index: 100; }
@@ -7464,7 +7466,30 @@ Styleguide 5.3
           display: block;
           float: right;
           position: relative;
-          top: 0.5em; } }
+          top: 0.5em; }
+    .navbar-default .navbar-collapse .dropdown.open .dropdown-toggle {
+      transition-property: background-color color;
+      transition-duration: .25s;
+      transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+      color: #003262; }
+      .navbar-default .navbar-collapse .dropdown.open .dropdown-toggle:focus, .navbar-default .navbar-collapse .dropdown.open .dropdown-toggle:hover {
+        background-color: #d5e5f5; }
+    .navbar-default .navbar-collapse .dropdown.open .dropdown-menu {
+      padding-bottom: 0;
+      padding-top: 0;
+      display: block;
+      background-color: #fff; }
+      .navbar-default .navbar-collapse .dropdown.open .dropdown-menu > li a {
+        transition-property: background-color;
+        transition-duration: .25s;
+        transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+        background-color: #fff;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        color: #184066;
+        border-bottom: 1px #c0d9f0 solid; }
+        .navbar-default .navbar-collapse .dropdown.open .dropdown-menu > li a:hover {
+          background-color: #d5e5f5; } }
 
 #utility-nav {
   position: relative;
@@ -7625,6 +7650,7 @@ footer.footer .footer-nav {
     padding-left: 0;
     padding-right: 0; }
     footer.footer .footer-nav > li ul {
+      padding-bottom: 1em;
       border-bottom: 1px #555555 solid; }
     @media (min-width: 1200px) {
       footer.footer .footer-nav > li {
@@ -7672,6 +7698,10 @@ footer.footer .social li.twitter {
 @media (min-width: 768px) {
   footer.footer .social {
     float: right; } }
+
+footer.footer .navbar-nav {
+  margin-left: 0;
+  margin-right: 0; }
 
 footer.footer .footer-nav {
   float: none; }
