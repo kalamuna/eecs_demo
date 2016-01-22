@@ -734,7 +734,7 @@ pre {
   .row:after {
     clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, footer.footer .footer-nav > li, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .threeup.tout, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, footer.footer .footer-nav > li, .threeup.tout, .twoup.tout, .col-md-6, .twoup.tout, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .tout, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, footer.footer .footer-nav > li, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .threeup.tout, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .threeup.tout, .twoup.tout, footer.footer .footer-nav > li, .col-md-6, .twoup.tout, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .tout, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -897,7 +897,7 @@ pre {
   margin-left: 100%; }
 
 @media (min-width: 680px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, footer.footer .footer-nav > li, .threeup.tout, .twoup.tout, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .threeup.tout, .twoup.tout, footer.footer .footer-nav > li, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left; }
   .col-sm-1 {
     width: 8.33333%; }
@@ -909,7 +909,7 @@ pre {
     width: 33.33333%; }
   .col-sm-5 {
     width: 41.66667%; }
-  .col-sm-6, footer.footer .footer-nav > li, .threeup.tout, .twoup.tout {
+  .col-sm-6, .threeup.tout, .twoup.tout, footer.footer .footer-nav > li {
     width: 50%; }
   .col-sm-7 {
     width: 58.33333%; }
@@ -5139,6 +5139,40 @@ button.close {
 
 /* placeholder mixin */
 /* end placeholder mixin */
+/*
+Headlines
+
+Type styles
+
+Markup:
+<div class="content">
+<h1>An H1 Header: Hamburgerfions Sasquach</h1>
+<h2>An H2 Header: Hamburgerfions Sasquach</h2>
+<h3>An H3 Header: Hamburgerfions Sasquach</h3>
+<h4>An H4 Header: Hamburgerfions Sasquach</h4>
+<h5>An H5 Header: Hamburgerfions Sasquach</h5>
+<h6>An H6 Header: Hamburgerfions Sasquach</h6>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<blockquote>Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur.</blockquote>
+<ul>
+  <li>A list item</li>
+  <li>A list item</li>
+  <li>A list item</li>
+  <li>A list item</li>
+  <li>A list item</li>
+</ul>
+</div>
+
+Styleguide 5.1
+*/
 /* 
  * Source Sans Pro 
  * Complete @font-face kit 
@@ -5240,6 +5274,13 @@ h4 {
   margin-bottom: .25em;
   line-height: 1.2;
   letter-spacing: .05em; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold; }
 
 /*
 Fontawesome
@@ -7050,11 +7091,11 @@ fa-ban on fa-camera
 Styleguide 4.8
 */
 /*
-Custom Components
+EECS Components
 
 The following are components that are built specifically for the site.
 
-Styleguide 10.0
+Styleguide 5.0
 */
 .navbar-toggle {
   top: .75em;
@@ -7111,8 +7152,45 @@ footer .navbar-brand {
     width: 200px;
     height: 32px; }
 
+.list-group-item, .tout ul li {
+  padding: .5em 1em;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px #d4dadf solid; }
+  .list-group-item:hover, .tout ul li:hover {
+    background-color: #eeeeee; }
+  .list-group-item a, .tout ul li a {
+    display: block;
+    padding-left: .75em; }
+
+.list-group, .tout ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fbfbfb;
+  border-top: 1px #d4dadf solid;
+  transition-property: background-color;
+  transition-duration: .25s;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1); }
+
 /*
-First extendables…
+Search Molecule
+
+This is the search.
+
+<div class="search-container">
+  <span class="sr-only">Search</span>
+  <div class="search-box collapse search-collapse">
+    <form action="#" method="GET">
+      <input class="form-text" id="edit-search-block" placeholder="Search" name="query" type="text">
+      <!-- <input alt="Search" class="search-submit" src="/sites/all/themes/kettering/images/header/search/search-submit.png" type="image"> -->
+      <button role="button" type="submit" class="search-submit "><span>Search</span><i class="icon search" aria-hidden="true"></i></button>
+      <button role="button" type="close" class="search-close"><span>Close</span><i class="icon close" aria-hidden="true"></i></button>
+    </form>
+  </div>
+</div>
+
+Styleguide 5.4
 */
 .search-container .search-box input.form-text {
   width: 100%;
@@ -7239,6 +7317,106 @@ Actual css styles below
 /////////////////////////////////////////////////
 */
 /*
+Touts
+
+Content blocks leading to other places
+
+Markup:
+<div>
+  <article class="tout threeup">
+    <div class="media">
+      <img src="http://img.uvumi.com/photos/5367/big/2000px-smpte-color-bars-16x9-svg.png" alt="Alt text is important for accessibility!">
+    </div>
+    <div class="content">
+      <h3 class="title">Article Headline</h3>
+      <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      <ul>
+        <li><a href="#">A Link of Somesort</a></li>
+        <li><a href="#">A Link of Somesort</a></li>
+        <li><a href="#">A Link of Somesort</a></li>
+      </ul>
+      <button role="button" class="cta"><span>CTA of Some Sort</span><i class="icon terminal" aria-hidden="true"></i></button>
+    </div>
+  </article>
+
+          <article class="tout threeup">
+    <div class="media">
+      <img src="http://img.uvumi.com/photos/5367/big/2000px-smpte-color-bars-16x9-svg.png" alt="Alt text is important for accessibility!">
+    </div>
+    <div class="content">
+      <h3 class="title">Article Headline</h3>
+      <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      <ul class="links">
+        <li><a href="#">A Link of Somesort</a></li>
+        <li><a href="#">A Link of Somesort</a></li>
+        <li><a href="#">A Link of Somesort</a></li>
+      </ul>
+      <button role="button" class="cta"><span>CTA of Some Sort</span><i class="icon terminal" aria-hidden="true"></i></button>
+    </div>
+  </article>
+
+          <article class="tout threeup">
+    <div class="media">
+      <img src="http://img.uvumi.com/photos/5367/big/2000px-smpte-color-bars-16x9-svg.png" alt="Alt text is important for accessibility!">
+    </div>
+    <div class="content">
+      <h3 class="title">Article Headline</h3>
+      <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      <ul class="links">
+        <li><a href="#">A Link of Somesort</a></li>
+        <li><a href="#">A Link of Somesort</a></li>
+        <li><a href="#">A Link of Somesort</a></li>
+      </ul>
+      <button role="button" class="cta"><span>CTA of Some Sort</span><i class="icon terminal" aria-hidden="true"></i></button>
+    </div>
+  </article>
+
+</div>
+Styleguide 5.3
+*/
+.tout {
+  margin-bottom: 2em; }
+  .tout .media img {
+    display: block; }
+  .tout .content {
+    position: relative;
+    top: -3em; }
+    .tout .content p {
+      background-color: #fbfbfb;
+      clear: both;
+      padding: 1em 1.25em;
+      margin-bottom: 0; }
+  .tout h3 {
+    font-weight: bold;
+    background-color: #fbfbfb;
+    padding: .25em .75em;
+    margin-top: .25em;
+    margin-bottom: 0;
+    float: left;
+    clear: both; }
+  .tout button {
+    transition-property: background-color;
+    transition-duration: .25s;
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1); }
+
+.tout button {
+  font-size: 1.2em;
+  background-color: #46535e;
+  border: none;
+  font-weight: bold;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.tout button:hover, .tout button:focus {
+  background-color: #59853b;
+  color: #fff; }
+
+.tout button:active {
+  background-color: #59853b;
+  color: #323232; }
+
+/*
 // @todo, implement hover,
 // on js, only do if not touch enabled.
 // https://scotch.io/bar-talk/bootstrap-3-tips-and-tricks-you-might-not-know#how-to-enable-bootstrap-3-hover-dropdowns
@@ -7354,9 +7532,6 @@ Actual css styles below
         top: 4.25em; } }
 
 .navbar-default li.home a, footer.footer .utility-nav li.home a {
-  display: block;
-  height: 3em;
-  width: 3.75em;
   color: #fff; }
   .navbar-default li.home a:hover, footer.footer .utility-nav li.home a:hover {
     background-color: #fff; }
@@ -7366,8 +7541,22 @@ Actual css styles below
     font-size: 1.25em; }
   @media (min-width: 680px) {
     .navbar-default li.home a, footer.footer .utility-nav li.home a {
-      width: 50%;
-      text-align: center; } }
+      width: auto;
+      text-align: center; }
+      .navbar-default li.home a a, footer.footer .utility-nav li.home a a {
+        display: block;
+        height: 3em;
+        width: 3.75em; } }
+  #header .navbar-default li.home a, .navbar-default #header li.home a, #header footer.footer .utility-nav li.home a, footer.footer .utility-nav #header li.home a {
+    width: 50%;
+    border: #0af; }
+    #header .navbar-default li.home a a, .navbar-default #header li.home a a, #header footer.footer .utility-nav li.home a a, footer.footer .utility-nav #header li.home a a {
+      width: 100%; }
+    @media (min-width: 992px) {
+      #header .navbar-default li.home a, .navbar-default #header li.home a, #header footer.footer .utility-nav li.home a, footer.footer .utility-nav #header li.home a {
+        width: auto; }
+        #header .navbar-default li.home a a, .navbar-default #header li.home a a, #header footer.footer .utility-nav li.home a a, footer.footer .utility-nav #header li.home a a {
+          width: auto; } }
 
 @media (min-width: 992px) {
   .navbar-default li.home, footer.footer .utility-nav li.home {
@@ -7409,7 +7598,7 @@ Actual css styles below
     padding-bottom: 10px; } }
 
 /*
-Sticky Footer
+EECS Footer
 
 Provides a sticky footer at the bottom of the page.
 
@@ -7429,7 +7618,7 @@ Markup:
   </div>
 </footer>
 
-Styleguide 10.2
+Styleguide 5.2
 */
 /* Custom page CSS
 -------------------------------------------------- */
@@ -7455,7 +7644,7 @@ footer.footer .footer-nav {
       border-bottom: 1px #555555 solid; }
     @media (min-width: 1200px) {
       footer.footer .footer-nav > li {
-        width: 14%;
+        width: 13%;
         margin-right: .5em;
         border-bottom: none;
         margin-bottom: 0;
@@ -7564,64 +7753,5 @@ footer.footer .small-print {
     float: right; }
     footer.footer .small-print .policies a {
       color: #777777; }
-
-.tout {
-  margin-bottom: 2em; }
-  .tout .media img {
-    display: block; }
-  .tout .content {
-    position: relative;
-    top: -3em; }
-    .tout .content p {
-      background-color: #fbfbfb;
-      clear: both;
-      padding: 1em 1.25em;
-      margin-bottom: 0; }
-  .tout h3 {
-    font-weight: bold;
-    background-color: #fbfbfb;
-    padding: .25em .75em;
-    margin-top: .25em;
-    margin-bottom: 0;
-    float: left;
-    clear: both; }
-  .tout ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    background-color: #fbfbfb;
-    border-top: 1px #d4dadf solid;
-    transition-property: background-color;
-    transition-duration: .25s;
-    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1); }
-    .tout ul li {
-      padding: .5em 1em;
-      border-bottom: 1px #d4dadf solid; }
-      .tout ul li:hover {
-        background-color: #eeeeee; }
-      .tout ul li a {
-        display: block;
-        padding-left: .75em; }
-  .tout button {
-    transition-property: background-color;
-    transition-duration: .25s;
-    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1); }
-
-.tout button {
-  font-size: 1.2em;
-  background-color: #46535e;
-  border: none;
-  font-weight: bold;
-  width: 100%;
-  padding-top: 1em;
-  padding-bottom: 1em; }
-
-.tout button:hover, .tout button:focus {
-  background-color: #59853b;
-  color: #fff; }
-
-.tout button:active {
-  background-color: #59853b;
-  color: #323232; }
 
 /*# sourceMappingURL=main.css.map */
